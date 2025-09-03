@@ -1,4 +1,4 @@
-const numero = 134;
+const numero = 25;
 const raizQuadrada = Math.sqrt(numero);
 
 if(raizQuadrada % 1 == 0){
