@@ -1,12 +1,12 @@
-const areaMetros = 300;
+const areaAcres = 300;
 const tipoPulverizacao = 2;
 let strPulverizacao = "";
 let valorPago = 0;
 switch(tipoPulverizacao){
    case 1:
       strPulverizacao = "Pulverizacao contra ervas daninhas";
-      valorPago = 50 * areaMetros;
-      if(areaMetros > 300){
+      valorPago = 50 * areaAcres;
+      if(areaAcres > 300){
          valorPago = valorPago - (valorPago * 0.05);
       } else if(valorPago > 10750){
             valorPago = valorPago - (valorPago * 0.10);
@@ -14,8 +14,8 @@ switch(tipoPulverizacao){
       break;
    case 2:
       strPulverizacao = "Pulverizacao contra gafanhotos";
-      valorPago = 100 * areaMetros;
-      if(areaMetros > 300){
+      valorPago = 100 * areaAcres;
+      if(areaAcres > 300){
          valorPago = valorPago - (valorPago * 0.05);
       } else if(valorPago > 10750){
             valorPago = valorPago - (valorPago * 0.10);
@@ -23,8 +23,8 @@ switch(tipoPulverizacao){
       break;
    case 3:
       strPulverizacao = "Pulverizacao contra broca";
-      valorPago = 150 * areaMetros;
-      if(areaMetros > 300){
+      valorPago = 150 * areaAcres;
+      if(areaAcres > 300){
          valorPago = valorPago - (valorPago * 0.05);
       } else if(valorPago > 10750){
             valorPago = valorPago - (valorPago * 0.10);
@@ -32,8 +32,8 @@ switch(tipoPulverizacao){
       break;
    case 4:
       strPulverizacao = "Pulverizacao contra tudo";
-      valorPago = 250 * areaMetros;
-     if(areaMetros > 300){
+      valorPago = 250 * areaAcres;
+     if(areaAcres > 300){
          valorPago = valorPago - (valorPago * 0.05);
       } else if(valorPago > 10750){
             valorPago = valorPago - (valorPago * 0.10);
