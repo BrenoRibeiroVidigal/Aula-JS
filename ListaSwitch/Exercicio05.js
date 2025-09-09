@@ -1,5 +1,6 @@
 const areaAcres = 300;
 const tipoPulverizacao = 2;
+const nomeFazendeiro = "Samuel lima";
 let strPulverizacao = "";
 let valorPago = 0;
 switch(tipoPulverizacao){
@@ -45,4 +46,5 @@ switch(tipoPulverizacao){
 }
    const saida = "Tipo da pulverizacao: " + strPulverizacao;
    const saida2 = "Valor da pulverizacao: " + valorPago;
-   console.log(saida + "\n" + saida2);
+   const saida3 = "Nome do fazendeiro: " + nomeFazendeiro;
+   console.log(saida + "\n" + saida2 + "\n" + saida3);
