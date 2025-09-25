@@ -1,6 +1,9 @@
-const areaAcres = 301;
-const tipoPulverizacao = 1;
-const nomeFazendeiro = "Samuel lima";
+const areaAcres = document.getElementById("idInAreaAcres");
+const nomeFazendeiro = document.getElementById("idInNome");
+const tipoPulverizacao = document.getElementById("idInTipoPulverizacao");
+const resultado = document.getElementById("idOnResultado");
+
+function calcularPulverizacao(areaAcres, tipoPulverizacao, nomeFazendeiro){
 let strPulverizacao = "";
 let valorPago = 0;
 switch(tipoPulverizacao){
@@ -41,57 +44,19 @@ switch(tipoPulverizacao){
       }
       break;
    default:
-      strPulverizacao = "Tipo de pulverizacao errado";
+      strPulverizacao = "errado";
       valorPago = 0;
 }
    const saida = "Tipo da pulverizacao: " + strPulverizacao;
    const saida2 = "Valor da pulverizacao: " + valorPago;
    const saida3 = "Nome do fazendeiro: " + nomeFazendeiro;
-   console.log(saida + "\n" + saida2 + "\n" + saida3);
-
-
-/*const areaAcres = 300;
-const tipoPulverizacao = 4;
-const nomeFazendeiro = "Samuel Lima";
-
-let strPulverizacao = "";
-let valorPago = 0;
-
-switch(tipoPulverizacao){
-   case 1:
-      strPulverizacao = "Pulverizacao contra ervas daninhas";
-      valorPago = 50 * areaAcres;
-      break;
-   case 2:
-      strPulverizacao = "Pulverizacao contra gafanhotos";
-      valorPago = 100 * areaAcres;
-      break;
-   case 3:
-      strPulverizacao = "Pulverizacao contra broca";
-      valorPago = 150 * areaAcres;
-      break;
-   case 4:
-      strPulverizacao = "Pulverizacao contra tudo";
-      valorPago = 250 * areaAcres;
-      break;
-   default:
-      strPulverizacao = "Tipo de pulverizacao errado";
-      valorPago = 0;
+   return(saida + "\n" + saida2 + "\n" + saida3);
 }
 
-switch(true){
-   case (areaAcres > 300):
-      valorPago -= valorPago * 0.05;
-      break;
+function eventoBtnCalcularPulverizacao(){
+   const areaAcresN = Number(areaAcres.value);
+   const tipoPulverizacaoN = Number(tipoPulverizacao.value);
+   const nomeFazendeiroN = nomeFazendeiro.value;
+   const valorFinal = calcularPulverizacao(areaAcresN, tipoPulverizacaoN, nomeFazendeiroN);
+   resultado.innerText = valorFinal;
 }
-
-switch(true){
-   case (valorPago > 10750):
-      valorPago = (valorPago - 10750) * 0.9;
-      break;
-}
-
-console.log("Tipo da pulverizacao: " + strPulverizacao);
-console.log("Valor da pulverizacao: " + valorPago.toFixed(2));
-console.log("Nome do fazendeiro: " + nomeFazendeiro);
-*/
