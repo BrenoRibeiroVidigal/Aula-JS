@@ -4,10 +4,10 @@ const resultado = document.getElementById("idOnResultado");
 function verificarPrimo(numero) {
     for (let i = 2; i < numero; i++) {
             if (numero % i == 0) {
-            return "o numero nao é primo.";
+            return "o numero nao é primo";
         }
     }
-    return "o numero é primo.";
+    return "o numero é primo";
 }
 
 function eventoBtnCalcularPrimo() {

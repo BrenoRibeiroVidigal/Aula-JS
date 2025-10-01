@@ -1,7 +1,7 @@
 const numero = document.getElementById("idInNumeroInteiroPositivo");
 const resultado = document.getElementById("idOnResultado");
 
-function calcularDivisoresWhile(numero) {
+function calcularDivisores(numero) {
     let texto = "Divisores:\n";
     let i = 1;
     while (i <= numero) {
@@ -15,6 +15,6 @@ function calcularDivisoresWhile(numero) {
 
 function eventoBtnCalcularDivisores() {
     const numeroN = Number(numero.value);
-    const valorFinal = calcularDivisoresWhile(numeroN);
+    const valorFinal = calcularDivisores(numeroN);
     resultado.innerText = valorFinal;
 }
