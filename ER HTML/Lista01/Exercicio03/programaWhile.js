@@ -7,8 +7,7 @@ function calcularDivisores(numero) {
     while (i <= numero) {
         if (numero % i == 0) {
             texto += i + "\n";
-        }
-        i++;
+        }i++;
     }
     return texto;
 }
