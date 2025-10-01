@@ -5,7 +5,7 @@ function calcularDivisores(numero) {
     let texto = "Divisores:\n";
     let i = 1;
     while (i <= numero) {
-        if (numero % i === 0) {
+        if (numero % i == 0) {
             texto += i + "\n";
         }
         i++;
