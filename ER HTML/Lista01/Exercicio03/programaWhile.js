@@ -1,18 +1,20 @@
 const numero = document.getElementById("idInNumeroInteiroPositivo");
 const resultado = document.getElementById("idOnResultado");
 
-function calcularDivisores(numero) {
+function calcularDivisoresWhile(numero) {
     let texto = "Divisores:\n";
-    for (let i = 1; i <= numero; i++) {
-        if (numero % i == 0) {
+    let i = 1;
+    while (i <= numero) {
+        if (numero % i === 0) {
             texto += i + "\n";
         }
+        i++;
     }
     return texto;
 }
 
-function eventoBtnCalcularDivisores(){
+function eventoBtnCalcularDivisores() {
     const numeroN = Number(numero.value);
-    const valorFinal = calcularDivisores(numeroN);
+    const valorFinal = calcularDivisoresWhile(numeroN);
     resultado.innerText = valorFinal;
 }
