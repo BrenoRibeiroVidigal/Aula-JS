@@ -13,7 +13,7 @@ function tabuada(valor) {
 
 
 function eventoBtnCalcularTabuada() {
-    let valorNumero = parseFloat(valor.value);
+    let valorNumero = Number(valor.value);
     const valorFinal = tabuada(valorNumero);
     resultado.innerText = valorFinal;
 }
