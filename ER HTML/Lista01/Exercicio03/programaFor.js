@@ -1,4 +1,4 @@
-const numero = document.getElementById("idInNumeroInteiroPositivo");
+const numero = document.getElementById("idInNumero");
 const resultado = document.getElementById("idOnResultado");
 
 function calcularDivisores(numero) {
