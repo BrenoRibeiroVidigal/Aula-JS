@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Numero perfeito</title>
+</head>
+<body>
+    <h1>Calcular Numero perfeito </h1>
+    <h2>Entrada de Dados:</h2>
+    
+    <form>
+    <h2>
+    <p>Numero: <input type="number" id="IdInNumero" placeholder="Digite um número"></p>
+    <select name="tipoFilme" id = "IdInTipoDeCalculo">
+        <option value="Numero perfeito">Numero perfeito</option>
+        <option value="Numero com caracteristica">Numero com caracteristica</option>
+        <option value="Numero triangular">Numero triangular</option>
+        <option value="Calcular Fatorial">Calcular Fatorial</option>
+        <option value="Numero primo">Numero primo</option>
+    </select>
+    <p><input type="button" id="btnExecutar" value="Executar" onclick="eventoBtnExecutar()"></p>
+    <p>Resultado:</p>
+    <p id= "idOnResultado"></p>
+    </h2>
+    </form>
+    
+    <script src="programa.js"></script>
+
+</body>
+</html>
